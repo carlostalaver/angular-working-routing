@@ -27,6 +27,8 @@ export class ProductEditComponent implements OnInit {
 
   set product(value: Product) {
     this.currentProduct = value;
+    console.log('---------------> ', value);
+
     // Clone the object to retain a copy
     this.originalProduct = value ? { ...value } : null;
   }
